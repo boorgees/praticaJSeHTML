@@ -24,9 +24,10 @@
 	var imcAmigo = calculaImc(1.72, 68);
 	somaImc(imcFlavio, imcAmigo); */
 
-	var altura = prompt("Informe sua altura: ");
-	var peso = prompt("Informe seu peso: ");
-	var calculo = alert("O IMC é : " + (peso / (altura * altura)))
+	var nome = prompt("Informe seu nome.")
+	var altura = prompt(nome + " , informe sua altura, em metro: ");
+	var peso = prompt(nome + " , informe seu peso, em quilos: ");
+	var calculo = alert(nome + " , o seu IMC é : " + (peso / (altura * altura)))
 
 	
 </script>
