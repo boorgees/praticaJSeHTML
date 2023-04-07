@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<script>
+
+	function mostra(frase) {
+		document.write(frase);
+		document.write("<br><br>")
+	}
+
+/* 	function somaImc(imc1, imc2) {
+		let soma = imc1 + imc2;
+		mostra("A soma dos imc é " + soma);
+	} */
+
+
+	/* function calculaImc(altura, peso) {
+		var imc = peso / (altura * altura); // faz o calculo
+		mostra("O imc calculado é " + imc);
+		return imc; // serve para retornar o resultado para usar em outras situações.
+	} */
+
+
+	/* var imcFlavio = calculaImc(1.71, 84);
+	var imcAmigo = calculaImc(1.72, 68);
+	somaImc(imcFlavio, imcAmigo); */
+
+	var altura = prompt("Informe sua altura: ");
+	var peso = prompt("Informe seu peso: ");
+	var calculo = alert("O IMC é : " + (peso / (altura * altura)))
+
+	
+</script>
