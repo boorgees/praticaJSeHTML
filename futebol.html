@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>")
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    // a funçção prompt sempre retorna como texto
+
+    var vitorias = parseInt(prompt("Entre com o número de vitórias: "));
+
+    // é preciso garantir que o retorno seja número
+
+    var empates = parseInt(prompt("Entre com o número de empates: "));
+
+    // o js calcula a multiplicação de uma string que é numero, mas não na concatenação
+
+    var pontos = vitorias * 3 + empates;
+
+    mostra("Os pontos do seu time são " + pontos);
+
+    // usar o parseInt() para converter o texto para número(SE FOR UM NUMERO NA STRING)
+    
+</script>
