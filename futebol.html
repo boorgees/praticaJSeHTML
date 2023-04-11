@@ -20,10 +20,27 @@
 
     // o js calcula a multiplicação de uma string que é numero, mas não na concatenação
 
-    var pontos = vitorias * 3 + empates;
+    let pontos = vitorias * 3 + empates;
 
     mostra("Os pontos do seu time são " + pontos);
 
+    let pontosPassado = 28;
+
+    function compara(pontuacao) {
+        if (pontuacao > pontosPassado) {
+            mostra("<h1>Seu time está melhor do que o ano passado!</h1>")
+        } else {
+            if (pontuacao < pontosPassado) {
+                mostra("<h2>Seu time está pior do que o ano passado!</h2>")
+            } else {
+                mostra("<h3>Seu time está igual ao ano passado!</h3>")
+            }
+        }
+    }
+
+    compara(pontos);
+
+    mostra("Futebol é assim mesmo!")
     // usar o parseInt() para converter o texto para número(SE FOR UM NUMERO NA STRING)
-    
+
 </script>

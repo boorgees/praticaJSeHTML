@@ -2,8 +2,8 @@
 
 <script>
 
-	function pulaLinha () {
-		document.write("<br><br>")
+	function pulaLinha() {
+		document.write("<br><br>");
 	}
 
 	function mostra(frase) {
@@ -11,10 +11,10 @@
 		pulaLinha();
 	}
 
-/* 	function somaImc(imc1, imc2) {
-		let soma = imc1 + imc2;
-		mostra("A soma dos imc é " + soma);
-	} */
+	/* 	function somaImc(imc1, imc2) {
+			let soma = imc1 + imc2;
+			mostra("A soma dos imc é " + soma);
+		} */
 
 
 	/* function calculaImc(altura, peso) {
@@ -28,10 +28,28 @@
 	var imcAmigo = calculaImc(1.72, 68);
 	somaImc(imcFlavio, imcAmigo); */
 
-	var nome = prompt("Informe seu nome.")
-	var altura = prompt(nome + " , informe sua altura, em metro: ");
-	var peso = prompt(nome + " , informe seu peso, em quilos: ");
-	var calculo = alert(nome + " , o seu IMC é : " + (peso / (altura * altura)))
+	var nome = prompt("Informe seu nome.");
 
-	
+	var altura = prompt(nome + " , informe sua altura, em metro: ");
+
+	var peso = prompt(nome + " , informe seu peso, em quilos: ");
+
+	var calculo = (peso / (altura * altura));
+
+	mostra(nome + " o seu IMC é de " + calculo);
+
+	function tabela(imc) {
+		if (calculo > 35) {
+			mostra("Você está acima do recomendado!");
+		} else {
+			if (calculo < 18.5) {
+				mostra("Você está abaixo do recomendado!");
+			} else {
+				mostra("Você está na média!");
+			}
+		}
+	}
+
+	tabela(calculo);
+
 </script>
